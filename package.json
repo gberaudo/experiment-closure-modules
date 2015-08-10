@@ -1,0 +1,11 @@
+{
+  "name": "closuremod",
+  "version": "0.0.0",
+  "description": "",
+  "devDependencies": {
+    "google-closure-compiler": "^20150729.0.0",
+    "google-closure-library": "^20150729.0.0"
+  },
+  "dependencies": {
+  }
+}
