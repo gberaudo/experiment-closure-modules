@@ -7,7 +7,9 @@ goog.provide('olcs.OLImageryProvider');
  * @extends {Cesium.ImageryProvider}
  */
 olcs.OLImageryProvider = function() {
+  console.log('olcs.OLImageryProvider Before base');
   goog.base(this);
+  console.log('olcs.OLImageryProvider After base');
 };
 
 goog.inherits(olcs.OLImageryProvider, Cesium.ImageryProvider);

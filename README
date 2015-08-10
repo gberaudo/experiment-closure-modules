@@ -1,0 +1,14 @@
+Howto split code with closure and load lazily at runtime
+
+Principle
+Cesium code is in cesium.js (foreign dependency)
+Cesium extern is in CesiumExterns.js (externs)
+ol3-cesium depends on Cesium (we skipped irrelevent dependency on OL3)
+app is the application code optionally depending on app3d
+app3d depends on ol3cesium and instanciate objects from olcs, contain 3D controls...
+
+
+Testing
+npm install
+./compile.sh
+Open test.html in a browser
