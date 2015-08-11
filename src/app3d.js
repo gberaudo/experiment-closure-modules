@@ -1,15 +1,19 @@
-goog.require('olcs.OLImageryProvider');
 goog.provide('app.Viewer3D');
 
-var my3dProvider = new olcs.OLImageryProvider();
-my3dProvider.doSomething();
+goog.require('ol.Map');
+goog.require('olcs.OLImageryProvider');
+
 
 
 
 /**
  * @constructor
+ * @param {ol.Map} map
  */
-app.Viewer3D = function() {
+app.Viewer3D = function(map) {
+  console.log('Creating viewer 3d');
+  var my3dProvider = new olcs.OLImageryProvider();
+  my3dProvider.doSomething();
 };
 
 

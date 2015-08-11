@@ -1,10 +1,7 @@
 var app = {}
 
-goog.require('app.Viewer3D');
+var map = new ol.Map();
 
-/**
- * @type {app.Viewer3D}
- */
 var viewer;
 
 setTimeout(function() {
@@ -16,7 +13,8 @@ setTimeout(function() {
 
     s.onload = function() {
       console.log('loaded');
-      viewer = new app.Viewer3D();
+
+      viewer = new app.Viewer3D(map);
       viewer.do3D();
     };
 
